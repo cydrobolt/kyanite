@@ -92,7 +92,7 @@ function filteremail($email) {
     }
 }
 
-function log($msg) {
+function kyalog($msg) {
     $data = $msg;
     $file = "kyanite.log";
     $handle = fopen($file, 'a');
