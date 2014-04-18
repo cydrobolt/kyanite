@@ -73,9 +73,30 @@
         <div class="container-fluid push">
             <?php
             require_once 'kyaauth.php';
+            require_once 'req.php';
             $kyaauth = new kyaauth();
             if (is_array($kyaauth->islogged())) {
-                echo "<h1>Kyanite Stats</h1><br>";
+                $today = date('m/d/Y');
+                echo "<h1>Dashboard</h1><br>";
+                echo "<br>";
+                $qur = "SELECT MAX(vid) AS vid FROM stats";
+                $res = $mysqli->query(qr);
+                $row = mysqli_fetch_assoc($res);
+                $allvisits = $row['vid'];
+                $qur = "SELECT vid FROM stats WHERE date='$today'";
+                $res = $mysqli->query($qur);
+                $row = mysqli_fetch_assoc($res);
+                $todayvisits = count($row);
+                $allunique = "TBD";
+                $todayunique = "TBD";
+                
+                echo "<dt>Statistics:"
+                . "<dl>Number of visits (total): $allvisits"
+                . "<dl>Number of visitors today: $todayvisits"
+                        . "<dl>Unique Visitors (total): $allunique"
+                        . "<dl>Unique Visitors (today): $todayunique"
+                        . "<dl><a href='details.php'>Details</a>"
+                        . "</dt>";
             } else {
                 echo "<div class='jumbotron' style=\"text-align:center;padding-top:80px; background-color: rgba(0,0,0,0);\"><h1>Welcome to Kyanite</h1><br>"
                 . '<a href="login.php" class="btn btn-success btn-lg">Login</a>

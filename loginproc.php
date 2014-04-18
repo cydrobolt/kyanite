@@ -19,7 +19,7 @@ if($authed==true) {
 }
 else {
     require_once('header.php');
-    echo '<h2>Incorrect password or username (or account not activated). Try again</h2><br>';
+    echo '<h2>Incorrect password or username (or account suspended). Try again</h2><br>';
     require_once('footer.php');
     die();
 }

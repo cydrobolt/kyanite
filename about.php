@@ -9,7 +9,7 @@ require_once('version.php');
 <dl>Build Information
     <dt>Version: <?php require_once('req.php');
 echo $version; ?>
-    <dt>Build date: <?php echo $reldate; ?>
+    <dt>Release date: <?php echo $reldate; ?>
     <dt>App Build : <?php echo $wsn . " by " . $wsa . " on " . $wsb ?>
     <dt>
 </dl>

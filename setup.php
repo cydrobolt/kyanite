@@ -95,7 +95,13 @@
                         . "PRIMARY KEY(vid),"
                         . "ua VARCHAR(100),"
                         . "ip VARCHAR(100),"
-                        . "timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP()"
+                        . "timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),"
+                        . "date VARCHAR(50),"
+                        . "day TINYINT(3),"
+                        . "year TINYINT(6),"
+                        . "minute TINYINT(4),"
+                        . "second TINYINT(2),"
+                        . "ref VARCHAR(130)"
                         . ");");
 
                 sqlrun("CREATE INDEX ti ON stats (ip);");
