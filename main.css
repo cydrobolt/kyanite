@@ -1,0 +1,15 @@
+footer {
+  padding-left:5%;
+  bottom:0px;
+  position:absolute;
+  font-size:75%;
+}
+.push {
+    padding-left:5%;
+}
+.pushbottom {
+    padding-bottom: 3%;
+}
+.pushtop {
+    padding-top: 3%;
+}
