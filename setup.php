@@ -91,7 +91,7 @@
                         . ");");
                 sqlrun("CREATE TABLE stats"
                         . "("
-                        . "vid INT NOT NULL,"
+                        . "vid INT NOT NULL AUTO_INCREMENT,"
                         . "PRIMARY KEY(vid),"
                         . "ua VARCHAR(100),"
                         . "ip VARCHAR(100),"
