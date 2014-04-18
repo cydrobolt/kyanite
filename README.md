@@ -1,7 +1,7 @@
 kyanite
 =======
 
-#####A server-side analytics app for PHP. Minimalistic, hackable, and lightweight. Kyanite is based off of a previous project, HTrack. 
+#####A server-side analytics app for PHP. Minimalistic, hackable, and lightweight. Kyanite is replacing one of my previous projects, HTrack.
 
 ####Features:
 
