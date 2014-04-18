@@ -80,7 +80,7 @@
                 echo "<h1>Dashboard</h1><br>";
                 echo "<br>";
                 $qur = "SELECT MAX(vid) AS vid FROM stats";
-                $res = $mysqli->query(qr);
+                $res = $mysqli->query($qur);
                 $row = mysqli_fetch_assoc($res);
                 $allvisits = $row['vid'];
                 $qur = "SELECT vid FROM stats WHERE date='$today'";
