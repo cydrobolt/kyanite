@@ -25,3 +25,4 @@ class ajaxhandler {
     }
     
 }
+//Just a skelly
