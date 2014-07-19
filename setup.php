@@ -12,7 +12,7 @@
     </head>
     <body style="padding-top:60px">
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="//github.com/Cydrobolt/kyanite">Kyanite</a>
+            <a class="navbar-brand" href="index.php">Kyanite</a>
         </div>
         <div class='container-fluid push pushtop' style="text-align: left">
             <span><h1>Kyanite Setup</h1></span><br>
