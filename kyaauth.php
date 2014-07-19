@@ -48,7 +48,7 @@ class kyaauth {
         if (is_array($this->islogged())) {
             $authinfo = $this->islogged();
             echo "-->";
-            $text = '<a href="index." class="btn btn-link btn-lg"><span class="glyphicon glyphicon-off"></span> Logged in as ' . $authinfo['username'] . '</a><a href="logout.php" class="btn btn-success btn-default">Logout</a>';
+            $text = '<a href="index.php" class="btn btn-link btn-lg"><span class="glyphicon glyphicon-off"></span> Logged in as ' . $authinfo['username'] . '</a><a href="logout.php" class="btn btn-success btn-default">Logout</a>';
             echo $text;
         }
     }
